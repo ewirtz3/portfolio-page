@@ -1,0 +1,18 @@
+#navbar {
+  height: 70px;
+  margin-bottom: 5px;
+}
+.title {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+}
+
+.form {
+  border: 1px black solid;
+  margin-top: 20px;
+  padding: 20px;
+}
