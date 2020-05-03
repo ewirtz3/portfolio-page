@@ -19,3 +19,21 @@
 #blurb {
   font-family: "Playfair Display", serif;
 }
+
+#wrapper {
+  border: 1px black solid;
+  margin: 15px auto;
+  padding: 20px;
+}
+
+.container {
+  margin: 7px auto;
+}
+
+.links {
+  font-family: "Playfair Display", serif;
+}
+
+.card {
+  margin-bottom: 5px;
+}

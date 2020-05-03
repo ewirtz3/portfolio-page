@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>emily wirtz</title>
   </head>
   <body class="d-flex flex-column h-100">
@@ -22,47 +23,138 @@
       <div class="container justify-content-between d-flex" id="navbar">
         <nav class="nav-text text-white title">emily wirtz</nav>
         <nav class="nav-text">
-          <a href="./index.html" class="text-white subtitle m-3">About</a>
-          <a href="./portfolio.html" class="text-white subtitle m-3"
-            >Portfolio</a
+          <button type="button" class="btn btn-dark text-white subtitle m-3" id="about-button"
+            >About</button
           >
-          <a href="./contact.html" class="text-white subtitle m-3">Contact</a>
+          <button type="button" class="btn btn-dark text-white subtitle m-3"
+            id="portfolio-button"
+            >Portfolio</button
+          >
+          <button type="button" class="btn btn-dark text-white subtitle m-3"
+            id="contact-button"
+            >Contact</button
+          >
         </nav>
       </div>
     </nav>
-    <main class="container py-0 my-5 bg-light" id="about-me">
-      <div class="row m-2 title">
-        <h2>About Me</h2>
-      </div>
-      <hr />
-      <section class="row">
-        <img
-          src="./assets/biopic3.jpg"
-          alt="hi i'm emily"
-          class="col-md-6 ml-3 mb-5 p-0 biopic"
-          style="max-width: 225px; max-height: 400px;"
-        />
-        <section class="col-md-6 p-0 ml-5" style="width: 500px;" id="blurb">
-          <p>
-            Hi my name is Emily! I'm 32 years old, and I'm from Kansas City,
-            Missouri. I have lived in other cities like Omaha, San Francisco,
-            and Playa Potrero, Costa Rica. I am currently taking a coding boot
-            camp course, to become a full-stack web developer. I hope to find a
-            remote job with my coding skills, so that I can travel as I please
-            and still be able to work.
-          </p>
-          <br />
-          <p>Things I love are:</p>
-          <ul>
-            <li>Eating at new restaurants</li>
-            <li>Beaches and most bodies of water</li>
-            <li>Books, movies, tv shows</li>
-            <li>Hammocks and other places to sleep</li>
-            <li>Making Spotify playlists for myself and friends</li>
-          </ul>
+    <main class="container py-0 my-5 bg-light" id="wrapper">
+      <section id="about-me" class="container d-none bg-light">
+        <div class="row m-3 title">
+          <h2>About Me</h2>
+        </div>
+        <hr />
+        <section class="row">
+          <img
+            src="./assets/biopic3.jpg"
+            alt="hi i'm emily"
+            class="col-md-6 ml-3 mb-5 p-0 biopic"
+            style="max-width: 225px; max-height: 400px;"
+          />
+          <section class="col-md-6 p-0 ml-5" style="width: 500px;" id="blurb">
+            <p>
+              Hi my name is Emily! I'm 32 years old, and I'm from Kansas City,
+              Missouri. I have lived in other cities like Omaha, San Francisco,
+              and Playa Potrero, Costa Rica. I am currently taking a coding boot
+              camp course, to become a full-stack web developer. I hope to find
+              a remote job with my coding skills, so that I can travel as I
+              please and still be able to work.
+            </p>
+            <br />
+            <p>Things I love are:</p>
+            <ul>
+              <li>Eating at new restaurants</li>
+              <li>Beaches and most bodies of water</li>
+              <li>Books, movies, tv shows</li>
+              <li>Hammocks and other places to sleep</li>
+              <li>Making Spotify playlists for myself and friends</li>
+            </ul>
+          </section>
         </section>
       </section>
+      <section class="container bg-light d-none" id="portfolio">
+        <h2 class="title">Portfolio</h2>
+        <hr />
+        <h4 class="links">View My:</h4>
+        <ul class="links">
+          <li>
+            <a href="https://github.com/ewirtz3" alt="GitHub link" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/emily-wirtz-63b98519" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/story/ewirtz3" target="_blank">Stack Overflow</a>
+          </li>
+        </ul>
+        <h4 class="links">GitHub projects:</h4>
+        <div class="card-deck">
+          <div class="card">
+            <img
+              src="https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg"
+              alt="weather icons"
+              class="card-img-top"
+            />
+            <div class="card-body subtitle">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">
+                User provides city, is then given the current forecast as well as
+                the 5-day forecast.
+              </p>
+              <p class="card-text">
+                <a href="https://ewirtz3.github.io/weather-dashboard/" target="_blank">View</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+              <img src="https://modernrestaurantmanagement.com/assets/media/2020/01/Unsplash_xBFTjrMIC0c-1200x655.jpg" alt="cocktails image" class="card-img-top">
+              <div class="card-body subtitle">
+                  <h5 class="card-title">Inside or Outside?</h5>
+                  <p class="card-text">
+                    Responsive application which takes in the user input to either provide a 5-day weather forecast or a random cocktail recipe.
+                  </p>
+                  <p class="card-text">
+                    <a href="https://ewirtz3.github.io/inside-or-outside/" target="_blank">View</a>
+                  </p>
+              </div>
+          </div>
+         <div class="card">
+              <div class="card-body subtitle">
+                  <img src="https://www.pilotonline.com/resizer/2OpTLKC3OF9OswVc8FkeHheHU6Y=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/TSOIZTNY7NH4JLGPN6HL6VEXFY.png" alt="Link to Workday Scheduler" class="card-img-top">
+                  <h5 class="card-title">Workday Scheduler</h5>
+                  <p class="card-text">
+                  Simple scheduler for your workday. User inputs calendar events, which persist after the user clicks Save. Time blocks show whether they are in the past, present, or future.
+                  </p>
+                  <p class="card-text">
+                  <a href="https://ewirtz3.github.io/work-day-scheduler/" target="_blank">View</a>
+                  </p>
+              </div>
+         </div>
+      </section>
+      <section class="container bg-light d-none form" id="contact">
+        <h2 class="subtitle">Contact</h2>
+        <hr />
+        <form class="subtitle">
+          <section class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="name" class="form-control" id="ExampleInputName1" />
+          </section>
+          <section class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="ExampleInputEmail1" />
+          </section>
+          <section class="form-group">
+            <label for="message">Message</label>
+            <br />
+            <textarea id="message" class="message" rows="5" cols="40"></textarea>
+          </section>
+          <section class="submission">
+            <button type="button" class="btn btn-info">Submit</button>
+          </section>
+        </form>
+      </section>
     </main>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/script.js" language="JavaScript" type="text/javascript"></script>
   </body>
 </html>
